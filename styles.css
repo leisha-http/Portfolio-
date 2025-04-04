@@ -252,9 +252,55 @@ nav .container {
 
 .nav-links a {
     text-decoration: none;
-    transition: var(--transition);
+        transition: var(--transition);
+    }
+    
+    .mobile-menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: var(--bg-primary-light);
+        padding: 20px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        box-shadow: var(--shadow-light);
+    }
+    
+    .menu-toggle.active + .mobile-menu {
+        display: flex;
+    }
+    
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+    
+        .menu-toggle {
+            display: block;
+        }
 }
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 20px;
+        text-align: center;
+    }
+}@media (max-width: 576px) {
+    .skills-container,
+    .projects-grid,
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+}@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
 
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+}
 .light-theme .nav-links a {
     color: var(--text-primary-light);
 }
