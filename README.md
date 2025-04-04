@@ -1,10 +1,10 @@
 # Portfolio
-Welcome Welcome all to my portfolio 
+👋Welcome Welcome all to my portfolio 
 
-My portfolio uses 3 programming languages:
+3️⃣My portfolio uses 3 programming languages:
 
-HTML
+1️⃣HTML
 
-CSS
+2️⃣CSS
 
-Javascript
+3️⃣Javascript
